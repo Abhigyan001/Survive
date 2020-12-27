@@ -7,9 +7,10 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/*!**********************!*\
+/******/ 	"use strict";
+/*!**********************!*
   !*** ./src/index.js ***!
   \**********************/
-eval("\n\n//# sourceURL=webpack://Survive/./src/index.js?");
+eval("\n\n//# sourceURL=webpack://survive/./src/index.js?");
 /******/ })()
 ;
