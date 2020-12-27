@@ -1,6 +1,7 @@
 class SceneMain extends Phaser.Scene {
   constructor() {
-    super({ key: "SceneMain" });
+    super({ key: "SceneMain" });  
+    
   }
   
   preload() {
@@ -69,6 +70,10 @@ class SceneMain extends Phaser.Scene {
       laser: this.sound.add("sndLaser")
     };
 
+    this.score = 0; 
+    
+    const scoreText = this.add.text(0, 0, 'Score:', { fontFamily: '"Roboto Condensed"', fontSize: '20px' });
+
     this.backgrounds = [];
     for (var i = 0; i < 5; i++) { // create five scrolling backgrounds
       var bg = new ScrollingBackground(this, "sprBg0", i * 10);
@@ -132,28 +137,35 @@ class SceneMain extends Phaser.Scene {
       loop: true
     });
 
-    this.physics.add.collider(this.playerLasers, this.enemies, function(playerLaser, enemy) {
+    this.physics.add.collider(this.playerLasers, this.enemies, (playerLaser, enemy) => {
       if (enemy) {
         if (enemy.onDestroy !== undefined) {
           enemy.onDestroy();
         }
-        enemy.explode(true);
-        playerLaser.destroy();
+        enemy.explode(true);        
+        this.score += 5;
+        console.log(this.score);
+        scoreText.setText(`Score: ${this.score}`); 
+        playerLaser.destroy();        
       }
     });
 
-    this.physics.add.overlap(this.player, this.enemies, function(player, enemy) {
+    this.physics.add.overlap(this.player, this.enemies, (player, enemy) => {
       if (!player.getData("isDead") &&
           !enemy.getData("isDead")) {
         player.explode(false);
+        player.onDestroy();
         enemy.explode(true);
+        this.score += 5;
+        scoreText.setText(`Score: ${this.score}`);         
       }
     });
 
-    this.physics.add.overlap(this.player, this.enemyLasers, function(player, laser) {
+    this.physics.add.overlap(this.player, this.enemyLasers, (player, laser) => {
       if (!player.getData("isDead") &&
           !laser.getData("isDead")) {
         player.explode(false);
+        player.onDestroy();
         laser.destroy();
       }
     });
