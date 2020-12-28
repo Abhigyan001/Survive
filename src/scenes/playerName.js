@@ -11,16 +11,16 @@ class PlayerName extends Phaser.Scene {
     getScore().then(res => {
       this.highScores = res;
     });
-    this.input = this.add.dom(340, 380, 'input', 'background-color: white; width: 220px; height: 50px; font: 22px Arial');
-    this.button = this.add.dom(530, 380, 'button', 'background-color: orange; width: 120px; height: 50px; font: 22px Arial', 'submit');
-    this.text = this.add.text(120, 250, 'Please enter your name:', { fontSize: '50px', fill: '#ffffff' });
+    this.input = this.add.dom(340, 380, 'input', 'background-color: white; width: 220px; height: 50px; font: 22px Times New Roman');
+    this.button = this.add.dom(530, 380, 'button', 'background-color: yellow; width: 120px; height: 50px; font: 22px Times New Roman', 'Start');
+    this.text = this.add.text(120, 250, 'Enter name to start game:', { fontSize: '50px', fill: '#ffffff' });
 
     const submitBtn = document.querySelector('button');
 
     submitBtn.onclick = () => {
       const name = document.querySelector('input').value;
       if (validateName(name) === false) {
-        this.add.text(220, 450, 'Name too short or too long', { fontSize: '25px', fill: '#ffffff' });
+        this.add.text(220, 450, 'Name too short/too long', { fontSize: '25px', fill: '#ffffff' });
       } else {
         this.registry.set('playerName', name);
         this.registry.set('score', this.highScores);

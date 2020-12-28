@@ -11,7 +11,7 @@ class ScoresScene extends Phaser.Scene {
   }
 
   create() {
-    this.text = this.add.text(230, 150, 'Top scores', { fontSize: '65px', fill: '#ffffff' });
+    this.text = this.add.text(230, 150, 'Top Players:', { fontSize: '65px', fill: '#ffffff' });
 
     let height = 210;
 

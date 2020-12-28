@@ -114,7 +114,7 @@ class MainScene extends Phaser.Scene {
     if (enemy.type === 'Gunship') {
       enemy.shootTimer.remove(false);
     }
-    enemy.destroy();
+    enemy.destroy();    
     this.score += 30;
     this.scoreText.setText(`Score: ${this.score}`);
   }
