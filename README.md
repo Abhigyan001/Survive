@@ -39,7 +39,7 @@ The game is over when the player gets shot or collides with an enemy.
 
 ## Live demo link
 
-[Space shooter](https://space-survivor.netlify.app/)
+[Space Survivor](https://space-survivor.netlify.app/)
 
 ## How to use this app locally?
 
