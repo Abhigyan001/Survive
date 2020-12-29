@@ -27,7 +27,7 @@ class Enemies extends Phaser.Physics.Arcade.Group {
       callbackScope: this.scene,
       loop: true,
     });
-  }  
+  }
 }
 
 

@@ -48,7 +48,7 @@ class MainScene extends Phaser.Scene {
 
     this.score = 0;
 
-    this.scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '17px', fill: '#ffffff' });
+    this.scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '20px', fill: '#ffffff' });
 
     this.physics.add.collider(this.playerLasers,
       this.enemies,
@@ -114,8 +114,8 @@ class MainScene extends Phaser.Scene {
     if (enemy.type === 'Gunship') {
       enemy.shootTimer.remove(false);
     }
-    enemy.destroy();    
-    this.score += 30;
+    enemy.destroy();
+    this.score += 10;
     this.scoreText.setText(`Score: ${this.score}`);
   }
 }

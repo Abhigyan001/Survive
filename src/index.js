@@ -13,7 +13,7 @@ const config = {
     createContainer: true,
   },
   width: 1366,
-  height: 725,  
+  height: 725,
   backgroundColor: 'black',
   physics: {
     default: 'arcade',
@@ -23,7 +23,7 @@ const config = {
     },
   },
   scene: [PlayerName, Menu, ScoresScene, MainScene, GameOver],
-  
+
 };
 
 window.game = new Phaser.Game(config);
