@@ -4,7 +4,7 @@ import Laser from '../objects/laser';
 class GunShip extends Phaser.Physics.Arcade.Sprite {
   constructor(scene) {
     const coordX = Math.random() * 1363;
-    super(scene, coordX, 10, 'enemy2');
+    super(scene, coordX, 9, 'enemy2');
     this.scene.add.existing(this);
     this.setScale(0.13);
     this.type = 'Gunship';
