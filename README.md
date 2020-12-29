@@ -10,7 +10,7 @@ This project consisted of building a shooter game that you can play on the brows
 
 ## What is this project about? 
 
- You are a space ship which is in the middle of a universe war and you have one objective: to destroy as many enemies as you can. You will have to cross the universe with the help of your laser shooter, avoiding being hit by the enemies or their lasers. This is an endless war so you have the opportunity to fight as long as you keep yourself alive.
+ In this game, you play as a spaceship and your primary objective is to survive the army of war gunships. Just like in real life, you get one shot at this. This is an endless war so you have the opportunity to fight as long as you keep yourself alive. Dodging the incoming fire, you get the ability to shoot down as many enemies as you can.
 
 
 ## Built with: 
@@ -39,7 +39,7 @@ The game is over when the player gets shot or collides with an enemy.
 
 ## Live demo link
 
-[Space shooter]()
+[Space shooter](https://space-survivor.netlify.app/)
 
 ## How to use this app locally?
 
