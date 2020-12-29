@@ -13,8 +13,8 @@ class Menu extends Phaser.Scene {
   }
 
   create() {
-    this.playBtn = this.physics.add.sprite(440, 300, 'playBtn').setScale(0.7);
-    this.score = this.physics.add.sprite(440, 440, 'highScore').setScale(0.5);
+    this.playBtn = this.physics.add.sprite(660, 300, 'playBtn').setScale(0.8);
+    this.score = this.physics.add.sprite(660, 440, 'highScore').setScale(0.8);
 
     this.playBtn.setInteractive().on('pointerdown', function startScene() {
       this.scene.start('MainScene');

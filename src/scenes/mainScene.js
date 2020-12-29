@@ -4,13 +4,13 @@ import enemy1 from '../assets/enemy1.png';
 import enemy2 from '../assets/enemy2.png';
 import enemy3 from '../assets/enemy3.png';
 import starfield from '../assets/starfield.png';
-import laser1 from '../assets/laser-org.png';
-import laser2 from '../assets/laser-round-gr.png';
+import laser1 from '../assets/laser-green.png';
+import laser2 from '../assets/laser-round-ora.png';
 import Laser from '../objects/laser';
 import Enemies from '../entities/enemies';
 import Player from '../entities/player';
 import explosion from '../assets/sndExplosion0.wav';
-import gameMusic from '../assets/gameMusic.wav';
+import gameMusic from '../assets/gameMusic.mp3';
 
 class MainScene extends Phaser.Scene {
   constructor() {

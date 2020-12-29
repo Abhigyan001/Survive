@@ -11,9 +11,10 @@ class PlayerName extends Phaser.Scene {
     getScore().then(res => {
       this.highScores = res;
     });
-    this.input = this.add.dom(340, 380, 'input', 'background-color: white; width: 220px; height: 50px; font: 22px Times New Roman');
-    this.button = this.add.dom(530, 380, 'button', 'background-color: yellow; width: 120px; height: 50px; font: 22px Times New Roman', 'Start');
-    this.text = this.add.text(120, 250, 'Enter name to start game:', { fontSize: '50px', fill: '#ffffff' });
+    this.input = this.add.dom(640, 400, 'input', 'background-color: white; width: 220px; height: 50px; font: 22px Times New Roman');
+    this.button = this.add.dom(830, 400, 'button', 'background-color: yellow; width: 120px; height: 50px; font: 22px Times New Roman', 'Start');
+    this.text = this.add.text(430, 150, '--Space Survivor--', { fontSize: '60px', fill: '#ffffff' });
+    this.text = this.add.text(320, 280, 'Enter your name to start game:', { fontSize: '45px', fill: '#ffffff' });
 
     const submitBtn = document.querySelector('button');
 

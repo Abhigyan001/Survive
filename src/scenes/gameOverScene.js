@@ -22,11 +22,11 @@ class GameOver extends Phaser.Scene {
     this.tileSprite = this.add.tileSprite(400, 300, 0, 0, 'starfield');
     this.gameOverSnd = this.sound.add('gameOver');
     this.gameOverSnd.play();
-    this.add.text(230, 230, 'GAME OVER', { fontSize: '75px', fill: '#ffffff' });
+    this.add.text(500, 230, 'GAME OVER', { fontSize: '75px', fill: '#ffffff' });
 
     sendScore(this.registry.get('playerName'), this.registry.get('playerScore')).then(() => { this.fetched = true; });
 
-    this.button = this.add.sprite(440, 400, 'buttons');
+    this.button = this.add.sprite(700, 400, 'buttons');
     this.button.setInteractive().on('pointerdown', function send() {
       if (this.fetched === true) {
         window.location.reload();
