@@ -1,4 +1,4 @@
-# Space shooter capstone project
+# Javascript capstone project: Space Survivor
 
 This project consisted of building a shooter game that you can play on the browser using Phaser 3 library (JavaScript).
 
