@@ -5,6 +5,6 @@ const sendScore = async (name, score) => {
     .then(res => res.data)
     .catch(err => err.response.data);
   return result;
-}
+};
 
 export default sendScore;
