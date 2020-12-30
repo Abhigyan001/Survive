@@ -7,6 +7,8 @@ This project consisted of building a shooter game that you can play on the brows
 
 ![screenshot](src/assets/ss1.png)
 
+Kindly check the Game Design Document I made before starting out: [GDD](./gdd.md)
+
 
 ## What is this project about? 
 
