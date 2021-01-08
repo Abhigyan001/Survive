@@ -98,7 +98,7 @@ The game is over when the player gets shot or collides with an enemy.
 
 - Github: [@githubhandle](https://github.com/Abhigyan001)
    
-- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/abhigyan001/)
+- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/abhigyanmahanta/)
 
 - Twitter: [@Twitter](https://twitter.com/abhigyan_001)
 
